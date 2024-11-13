@@ -3,6 +3,9 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
 import io
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 # Load your trained model
 model = load_model("mnist_digit_recognition_model.keras")
