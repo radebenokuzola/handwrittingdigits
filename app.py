@@ -4,6 +4,9 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import io
 import os
+import ensurepip
+ensurepip.bootstrap()
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
