@@ -9,6 +9,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 # Load your trained model
 model = load_model("mnist_digit_recognition_model.keras")
+model.save("mnist_digit_recognition_model.keras")
 
 app = Flask(__name__)
 
