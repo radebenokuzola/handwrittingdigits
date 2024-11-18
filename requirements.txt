@@ -1,7 +1,7 @@
 Flask==3.0.3
-numpy==1.23.5
+numpy==1.19.5
 setuptools
 wheel
 distlib
-tensorflow-cpu==2.6.0  
+tensorflow-cpu==2.6.0
 keras==2.6.0
