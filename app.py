@@ -7,12 +7,11 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-# URL of the externally hosted model file
-model_url = "https://drive.google.com/uc?export=download&id=1W1_5X5NwIoeXu2F7XgQdu-qqbz0o5GVz"
 
-# Download and load the model dynamically
-response = requests.get(model_url)
-model = tf.keras.models.load_model(BytesIO(response.content))
+# Load the model from the local 'model/' directory
+model = load_model('./model')
+
+
 
 def preprocess_image(image):
     image = image.resize((28, 28))
